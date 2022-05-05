@@ -100,6 +100,7 @@ def main(is_option: bool = False, page_limit: int=5, hidden_chrome: bool=False):
             # ポップアップを閉じる
             driver.execute_script('document.querySelector(".karte-close").click()')
         except:
+            #「pass」句を使うことでエラー発生後は何も起こらない
             pass
 
         # 検索窓に入力
