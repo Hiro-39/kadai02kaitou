@@ -88,7 +88,7 @@ def main(is_option: bool = False, page_limit: int=5, hidden_chrome: bool=False):
     # Webサイトを開く
     if is_option:
         # Option課題の場合は、URLを直接編集する
-        driver.get(f"kw{keyword}/?jobsearchType=14&searchType=18")
+        driver.get(f"https://tenshoku.mynavi.jp/list/kw{search_keyword}/?jobsearchType=14&searchType=18")
         time.sleep(5)
     else:
         driver.get("https://tenshoku.mynavi.jp/")

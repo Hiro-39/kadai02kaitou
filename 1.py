@@ -1,1 +1,0 @@
-print(fire.path)
